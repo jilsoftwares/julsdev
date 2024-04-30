@@ -2,7 +2,7 @@ import { Box, Flex, Link, Image, Text } from "@chakra-ui/react";
 
 export default function LogoSection() {
   return (
-    <Box>
+    <Box w="265px">
       <Flex
         gap={4}
         flexDir="column"

@@ -5,15 +5,16 @@ import DevButton from "./DevButton";
 export default function DevContact() {
   return (
     <DevContainer>
-      <Box>
+      <Box h="276px">
         <Flex
           flexDir="column"
-          gap="20px"
+          gap="40px"
           justify="center"
           align="center"
+          py="20px"
         >
           <Text
-            fontSize="28px"
+            fontSize={{ lg: "30px", base: "20px" }}
             lineHeight="-69px"
             textTransform="uppercase"
             fontWeight={800}
@@ -23,23 +24,13 @@ export default function DevContact() {
           <Box textAlign="center">
             <Text
               color={"#0978DE"}
-              fontSize="35px"
-              letterSpacing={"-3%"}
-              textTransform="uppercase"
-              fontWeight={900}
-              pb="10px"
-            >
-              Join forces with me!
-            </Text>
-            <Text
-              color={"#0978DE"}
-              fontSize="35px"
+              fontSize={{ lg: "35px", base: "24px" }}
               lineHeight="-69px"
               letterSpacing={"-3%"}
               textTransform="uppercase"
               fontWeight={900}
             >
-              Together, we will achieve great things.
+              Join forces with me! Together, we will achieve great things.
             </Text>
           </Box>
           <DevButton>Contact me</DevButton>

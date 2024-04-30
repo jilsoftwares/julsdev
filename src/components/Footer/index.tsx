@@ -16,11 +16,18 @@ export default function Footer() {
           lg: `
             "logo info menu"
           `,
+          base: `
+                "logo"
+                "info"
+                "menu"
+              `,
         }}
         gridTemplateRows={{
+          base: "repeat(5, auto)",
           lg: "auto",
         }}
         gridTemplateColumns={{
+          base: "1fr",
           lg: "repeat(3, 1fr)",
         }}
         gap={{ base: 4, md: 8 }}
@@ -30,7 +37,7 @@ export default function Footer() {
           w={{ base: "auto", md: 270, lg: 300 }}
           area="logo"
           pb={{ base: 5, md: 0 }}
-          justifySelf={{ base: "left", md: "left", lg: "left" }}
+          justifySelf={{ base: "center", md: "left", lg: "left" }}
           colStart={0}
         >
           <LogoSection />
@@ -39,7 +46,7 @@ export default function Footer() {
           w={{ base: "auto", md: 270, lg: 300 }}
           area="info"
           pb={{ base: 5, md: 0 }}
-          justifySelf={{ base: "left", md: "left", lg: "left" }}
+          justifySelf={{ base: "center", md: "left", lg: "left" }}
           colStart={0}
         >
           <InfoSection />
@@ -48,7 +55,7 @@ export default function Footer() {
           w={{ base: "auto", md: 270, lg: 300 }}
           area="menu"
           pb={{ base: 5, md: 0 }}
-          justifySelf={{ base: "left", md: "left", lg: "left" }}
+          justifySelf={{ base: "center", md: "left", lg: "left" }}
           colStart={0}
         >
           <MenuSection />

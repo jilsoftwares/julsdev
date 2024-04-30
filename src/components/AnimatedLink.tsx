@@ -27,6 +27,8 @@ export default function AnimatedLink({ children, isActive = false, ...rest }: An
       onMouseLeave={() => setIsHovered(false)}
       _hover={{ textDecoration: "none" }}
       w="fit-content"
+      fontWeight={700}
+      textTransform="uppercase"
     >
       {children}
       <Box

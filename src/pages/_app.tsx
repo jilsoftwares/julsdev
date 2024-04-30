@@ -7,6 +7,11 @@ import { ReactElement, ReactNode } from "react";
 
 import Head from "next/head";
 import Layout from "@/layout";
+import { Saira_Condensed } from "next/font/google";
+const SairaCondensed = Saira_Condensed({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -20,12 +25,8 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout || ((page) => <Layout>{page}</Layout>);
 
   return (
-    <>
+    <main className={SairaCondensed.className}>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
-        />
         <link
           rel="icon"
           href="/logo.png"
@@ -38,6 +39,6 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
       </Head>
 
       <ChakraProvider theme={theme}>{getLayout(<Component {...pageProps} />)}</ChakraProvider>
-    </>
+    </main>
   );
 }

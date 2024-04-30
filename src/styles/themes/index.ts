@@ -25,7 +25,7 @@ const overrides = {
         borderColor: "Gray !important",
       },
       body: {
-        fontSize: { base: "16px", md: "18px", lg: "20px" },
+        fontSize: { base: "16px", lg: "18px" },
         bg: "LightGrey",
         color: "Black",
         lineHeight: "130%",
