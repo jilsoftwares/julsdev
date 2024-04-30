@@ -4,8 +4,9 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { NextPage } from "next";
 import type { AppProps } from "next/app";
 import { ReactElement, ReactNode } from "react";
-import Layout from "../layout";
+
 import Head from "next/head";
+import Layout from "@/layout";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -21,12 +22,21 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   return (
     <>
       <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="icon"
+          href="/logo.png"
+        />
         <title>{"Jul's Dev"}</title>
         <meta
           name="description"
           content="Jul's Dev"
         />
       </Head>
+
       <ChakraProvider theme={theme}>{getLayout(<Component {...pageProps} />)}</ChakraProvider>
     </>
   );

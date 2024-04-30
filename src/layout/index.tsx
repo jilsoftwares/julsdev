@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import { Box } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
@@ -8,7 +10,9 @@ export default function Layout({ children }: { children: ReactNode }) {
       py="40px"
       position="relative"
     >
-      {children}
+      <Header />
+      <Box minHeight={"calc(100vh - 390px)"}>{children}</Box>
+      <Footer />
     </Box>
   );
 }

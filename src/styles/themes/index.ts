@@ -15,8 +15,8 @@ const overrides = {
   config,
   colors,
   fonts: {
-    heading: "Poppins, sans-serif",
-    body: "Poppins, sans-serif",
+    heading: ", saira-condensed, sans-serif",
+    body: "saira-condensed, sans-serif",
   },
   styles: {
     global: {
