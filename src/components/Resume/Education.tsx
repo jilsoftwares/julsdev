@@ -23,7 +23,7 @@ export default function Education() {
           fontSize="18px"
           fontWeight={700}
         >
-          Bachelor of Science in Computer science
+          Bachelor of Science in Computer Science
         </Text>
         <Text
           lineHeight="23px"

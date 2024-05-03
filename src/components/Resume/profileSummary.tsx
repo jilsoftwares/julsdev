@@ -6,7 +6,7 @@ export default function ProfileSummary() {
     <Flex
       flexDir="column"
       gap="40px"
-      pl="322px"
+      pl="356px"
     >
       <Text
         lineHeight="45px"

@@ -1,18 +1,39 @@
 import useCounter from "@/hooks/useCounter";
 import { Flex, Progress, Text, VStack } from "@chakra-ui/react";
 import React from "react";
+import styles from "@/styles/resume.module.css";
 
-const languages = [
+const skills = [
   {
-    name: "English",
-    percentage: 65,
-  },
-  {
-    name: "Tagalog",
+    name: "html",
     percentage: 100,
   },
   {
-    name: "Bisaya",
+    name: "css",
+    percentage: 100,
+  },
+  {
+    name: "javascript",
+    percentage: 45,
+  },
+  {
+    name: "python",
+    percentage: 45,
+  },
+  {
+    name: "Figma",
+    percentage: 45,
+  },
+  {
+    name: "react.js / next.js",
+    percentage: 45,
+  },
+  {
+    name: "rest/postgresql",
+    percentage: 45,
+  },
+  {
+    name: "wordpress",
     percentage: 45,
   },
 ];
@@ -31,19 +52,24 @@ const ProgressBar = ({ name, percentage }: { name: string; percentage: number })
         mb={5}
         width={{ base: 150, md: 236 }}
       >
-        <Text fontWeight="semibold">{name}</Text>
+        <Text
+          fontWeight="semibold"
+          textTransform="uppercase"
+        >
+          {name}
+        </Text>
         <Progress
-          size="sm"
-          value={count}
           rounded={3}
           h="13px"
+          size="sm"
+          value={count}
         />
       </Flex>
     </VStack>
   );
 };
 
-export default function Languages() {
+export default function Skills() {
   return (
     <Flex
       flexDir="column"
@@ -54,19 +80,21 @@ export default function Languages() {
         fontSize="28px"
         fontWeight={700}
       >
-        Languages
+        Skills
       </Text>
       <Flex
         flexDir="column"
         gap="20px"
       >
-        {languages.map((item, id) => (
-          <ProgressBar
-            key={id}
-            name={item.name}
-            percentage={item.percentage}
-          />
-        ))}
+        <div className={styles.splitToTwo}>
+          {skills.map((item, id) => (
+            <ProgressBar
+              key={id}
+              name={item.name}
+              percentage={item.percentage}
+            />
+          ))}
+        </div>
       </Flex>
     </Flex>
   );

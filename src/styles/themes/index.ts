@@ -37,7 +37,7 @@ const overrides = {
     Progress: {
       baseStyle: {
         filledTrack: {
-          bg: "#1b1b1b",
+          bg: "#0978DE",
         },
       },
     },

@@ -1,8 +1,10 @@
-import { Grid, GridItem } from "@chakra-ui/react";
+import { Flex, Grid, GridItem } from "@chakra-ui/react";
 import React from "react";
 import Education from "./Education";
 import Languages from "./Languages";
 import PersonalInformation from "./PersonalInformation";
+import WorkExperience from "./WorkExperience";
+import Skills from "./Skills";
 
 export default function DesktopScreen() {
   return (
@@ -18,11 +20,12 @@ export default function DesktopScreen() {
       gridTemplateColumns={{
         lg: "256px 1fr",
       }}
-      gap={{ md: "45px" }}
+      gap={{ md: "80px" }}
       rowGap={10}
       px="20px"
       pb="20px"
       pt="52px"
+      mb="100px"
     >
       <GridItem
         w={{ lg: 256 }}
@@ -31,17 +34,27 @@ export default function DesktopScreen() {
         justifySelf={{ lg: "left" }}
         colStart={0}
       >
-        <Education />
-        <Languages />
+        <Flex
+          flexDir="column"
+          gap="50px"
+        >
+          <Education />
+          <Languages />
+        </Flex>
       </GridItem>
       <GridItem
-        w={{ lg: 800 }}
         area="rightSection"
         pb={{ md: 0 }}
         justifySelf={{ lg: "left" }}
-        colStart={0}
       >
-        <PersonalInformation />
+        <Flex
+          flexDir="column"
+          gap="100px"
+        >
+          <PersonalInformation />
+          <WorkExperience />
+          <Skills />
+        </Flex>
       </GridItem>
     </Grid>
   );

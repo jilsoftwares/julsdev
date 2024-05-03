@@ -23,7 +23,7 @@ export default function ProfileInformation() {
         base: "1fr",
         lg: "auto 1fr",
       }}
-      gap={{ base: 4, md: 8 }}
+      gap={{ base: 4, md: "80px" }}
       rowGap={10}
       px="20px"
       py="40px"
@@ -57,10 +57,7 @@ export default function ProfileInformation() {
           >
             Julius Legaspi
           </Text>
-          <Flex
-            flexDir="column"
-            gap="22px"
-          >
+          <Flex flexDir="column">
             <Text
               fontSize="40px"
               lineHeight={"45px"}
@@ -71,7 +68,7 @@ export default function ProfileInformation() {
               fontSize="40px"
               lineHeight={"45px"}
             >
-              {capitalizeFirstLetter("jul’s dev")}
+              Jul’s Dev
             </Text>
           </Flex>
         </Flex>
