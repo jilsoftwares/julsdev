@@ -1,5 +1,6 @@
 import { Flex, Text } from "@chakra-ui/react";
 import React from "react";
+import DevFadeInUp from "../DevFadeInUp";
 
 const LabelFormat = ({ title, name }: { title: string; name: string }) => {
   return (
@@ -35,24 +36,26 @@ export default function PersonalInformation() {
       >
         Personal Information
       </Text>
-      <Flex
-        flexDir="row"
-        gap="80px"
-      >
-        <LabelFormat
-          title="Phone Number"
-          name="+63997 822 5514"
-        />
+      <DevFadeInUp>
+        <Flex
+          flexDir="row"
+          gap="80px"
+        >
+          <LabelFormat
+            title="Phone Number"
+            name="+63997 822 5514"
+          />
 
-        <LabelFormat
-          title="Email"
-          name="juliuslegaspi2014@gmail.com"
-        />
-        <LabelFormat
-          title="Location"
-          name="Mindanao, Davao City, Philippines"
-        />
-      </Flex>
+          <LabelFormat
+            title="Email"
+            name="juliuslegaspi2014@gmail.com"
+          />
+          <LabelFormat
+            title="Location"
+            name="Mindanao, Davao City, Philippines"
+          />
+        </Flex>
+      </DevFadeInUp>
     </Flex>
   );
 }

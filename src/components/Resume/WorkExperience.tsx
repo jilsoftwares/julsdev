@@ -1,5 +1,6 @@
 import { Box, Divider, Flex, Text } from "@chakra-ui/react";
 import React from "react";
+import DevFadeInUp from "../DevFadeInUp";
 
 const data = [
   {
@@ -55,34 +56,36 @@ export default function WorkExperience() {
         gap="40px"
       >
         {data.map(({ companyName, address, role, year, description }: workExperienceProps, id) => (
-          <Flex key={id}>
-            <Box
-              minH="full"
-              w="10px"
-              backgroundColor="black"
-              mr="10px"
-            />
-            <Flex
-              gap="32px"
-              flexDir="column"
-            >
+          <DevFadeInUp key={id}>
+            <Flex>
+              <Box
+                minH="full"
+                w="10px"
+                backgroundColor="black"
+                mr="10px"
+              />
               <Flex
-                flex={1}
-                flexDir={"row"}
-                justify="space-between"
+                gap="32px"
+                flexDir="column"
               >
-                <Flex flexDir="column">
-                  <Text fontWeight={700}>{role}</Text>
-                  <Text>{year}</Text>
+                <Flex
+                  flex={1}
+                  flexDir={"row"}
+                  justify="space-between"
+                >
+                  <Flex flexDir="column">
+                    <Text fontWeight={700}>{role}</Text>
+                    <Text>{year}</Text>
+                  </Flex>
+                  <Flex flexDir="column">
+                    <Text fontWeight={700}>{companyName}</Text>
+                    <Text>{address}</Text>
+                  </Flex>
                 </Flex>
-                <Flex flexDir="column">
-                  <Text fontWeight={700}>{companyName}</Text>
-                  <Text>{address}</Text>
-                </Flex>
+                <Text>{description}</Text>
               </Flex>
-              <Text>{description}</Text>
             </Flex>
-          </Flex>
+          </DevFadeInUp>
         ))}
       </Flex>
     </Flex>

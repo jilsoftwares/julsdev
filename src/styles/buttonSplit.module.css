@@ -1,0 +1,21 @@
+@media (min-width: 340px) {
+  .splitToTwo {
+    columns: 2;
+    column-gap: 1rem;
+  }
+
+  .splitToTwo > * {
+    break-inside: avoid;
+  }
+}
+
+@media (min-width: 900px) {
+  .splitToTwo {
+    columns: 2;
+    column-gap: 2rem;
+  }
+
+  .splitToTwo > * {
+    break-inside: avoid;
+  }
+}

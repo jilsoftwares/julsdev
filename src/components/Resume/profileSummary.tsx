@@ -1,5 +1,6 @@
 import { Flex, Text } from "@chakra-ui/react";
 import React from "react";
+import DevFadeInUp from "../DevFadeInUp";
 
 export default function ProfileSummary() {
   return (
@@ -15,17 +16,19 @@ export default function ProfileSummary() {
       >
         Profile
       </Text>
-      <Text
-        lineHeight="23px"
-        fontSize="18px"
-        fontWeight={400}
-        pr="100px"
-      >
-        As a highly confident and skilled software engineer, I took charge of developing exceptional
-        custom solutions, debugging, and enhancing the front-end experience. Additionally, I made an
-        impactful contribution to the implementation of the back-end API to expedite the deployment
-        of the project.
-      </Text>
+      <DevFadeInUp>
+        <Text
+          lineHeight="23px"
+          fontSize="18px"
+          fontWeight={400}
+          pr="100px"
+        >
+          As a highly confident and skilled software engineer, I took charge of developing
+          exceptional custom solutions, debugging, and enhancing the front-end experience.
+          Additionally, I made an impactful contribution to the implementation of the back-end API
+          to expedite the deployment of the project.
+        </Text>
+      </DevFadeInUp>
     </Flex>
   );
 }

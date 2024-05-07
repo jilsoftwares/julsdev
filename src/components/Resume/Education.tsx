@@ -1,5 +1,6 @@
 import { Flex, Text } from "@chakra-ui/react";
 import React from "react";
+import DevFadeInUp from "../DevFadeInUp";
 
 export default function Education() {
   return (
@@ -14,32 +15,34 @@ export default function Education() {
       >
         Education
       </Text>
-      <Flex
-        flexDir="column"
-        gap="20px"
-      >
-        <Text
-          lineHeight="23px"
-          fontSize="18px"
-          fontWeight={700}
+      <DevFadeInUp>
+        <Flex
+          flexDir="column"
+          gap="20px"
         >
-          Bachelor of Science in Computer Science
-        </Text>
-        <Text
-          lineHeight="23px"
-          fontSize="18px"
-          fontWeight={400}
-        >
-          Notre Dame University
-        </Text>
-        <Text
-          lineHeight="23px"
-          fontSize="18px"
-          fontWeight={400}
-        >
-          June 2009 - march 2015
-        </Text>
-      </Flex>
+          <Text
+            lineHeight="23px"
+            fontSize="18px"
+            fontWeight={700}
+          >
+            Bachelor of Science in Computer Science
+          </Text>
+          <Text
+            lineHeight="23px"
+            fontSize="18px"
+            fontWeight={400}
+          >
+            Notre Dame University
+          </Text>
+          <Text
+            lineHeight="23px"
+            fontSize="18px"
+            fontWeight={400}
+          >
+            June 2009 - march 2015
+          </Text>
+        </Flex>
+      </DevFadeInUp>
     </Flex>
   );
 }

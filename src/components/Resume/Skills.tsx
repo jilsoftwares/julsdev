@@ -2,6 +2,7 @@ import useCounter from "@/hooks/useCounter";
 import { Flex, Progress, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import styles from "@/styles/resume.module.css";
+import DevFadeInUp from "../DevFadeInUp";
 
 const skills = [
   {
@@ -14,7 +15,11 @@ const skills = [
   },
   {
     name: "javascript",
-    percentage: 45,
+    percentage: 75,
+  },
+  {
+    name: "typescript",
+    percentage: 72,
   },
   {
     name: "python",
@@ -22,15 +27,27 @@ const skills = [
   },
   {
     name: "Figma",
-    percentage: 45,
+    percentage: 55,
+  },
+  {
+    name: "react native",
+    percentage: 70,
   },
   {
     name: "react.js / next.js",
-    percentage: 45,
+    percentage: 80,
+  },
+  {
+    name: "tailwind css",
+    percentage: 65,
+  },
+  {
+    name: "node.js",
+    percentage: 68,
   },
   {
     name: "rest/postgresql",
-    percentage: 45,
+    percentage: 60,
   },
   {
     name: "wordpress",
@@ -86,15 +103,17 @@ export default function Skills() {
         flexDir="column"
         gap="20px"
       >
-        <div className={styles.splitToTwo}>
-          {skills.map((item, id) => (
-            <ProgressBar
-              key={id}
-              name={item.name}
-              percentage={item.percentage}
-            />
-          ))}
-        </div>
+        <DevFadeInUp>
+          <div className={styles.splitToTwo}>
+            {skills.map((item, id) => (
+              <ProgressBar
+                key={id}
+                name={item.name}
+                percentage={item.percentage}
+              />
+            ))}
+          </div>
+        </DevFadeInUp>
       </Flex>
     </Flex>
   );
