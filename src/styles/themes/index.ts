@@ -47,22 +47,22 @@ const overrides = {
         lineHeight: "110%",
       },
     },
-    Input: {
-      baseStyle: {
-        field: {
-          borderBottom: "1px solid",
-          borderBottomColor: "Black",
-          fontSize: "20px",
-          fontWeight: 500,
-          borderRadius: 0,
-          pb: 1,
-          lineHeight: "125%",
-        },
-      },
-      defaultProps: {
-        variant: "unstyled",
-      },
-    },
+    // Input: {
+    //   baseStyle: {
+    //     field: {
+    //       borderBottom: "1px solid",
+    //       borderBottomColor: "Black",
+    //       fontSize: "20px",
+    //       fontWeight: 500,
+    //       borderRadius: 0,
+    //       pb: 1,
+    //       lineHeight: "125%",
+    //     },
+    //   },
+    //   defaultProps: {
+    //     variant: "unstyled",
+    //   },
+    // },
   },
 };
 
