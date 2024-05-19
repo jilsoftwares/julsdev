@@ -43,12 +43,12 @@ export default function PersonalInformation() {
         >
           <LabelFormat
             title="Phone Number"
-            name="+63997 822 5514"
+            name="+63992 859 4377"
           />
 
           <LabelFormat
             title="Email"
-            name="juliuslegaspi2014@gmail.com"
+            name="jilsoftwares@gmail.com"
           />
           <LabelFormat
             title="Location"

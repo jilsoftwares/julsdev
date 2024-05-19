@@ -13,7 +13,7 @@ export default function LogoSection() {
             alt="juls dev"
           />
         </Link>
-        <Text>
+        <Text pr={10}>
           Assisting the company in improving its project, making it more seamless and efficient.
         </Text>
         <Text>©2024 JUL’S DEV</Text>

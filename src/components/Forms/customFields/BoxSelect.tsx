@@ -3,8 +3,9 @@ import React from "react";
 
 type Props = {
   label: string;
+  options: string[];
 };
-export default function BoxSelect({ label }: Props) {
+export default function BoxSelect({ label, options }: Props) {
   return (
     <Flex
       flexDir="column"
@@ -15,9 +16,14 @@ export default function BoxSelect({ label }: Props) {
         variant="flushed"
         placeholder="Select option"
       >
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
+        {options.map((item, id) => (
+          <option
+            value={item}
+            key={id}
+          >
+            {item}
+          </option>
+        ))}
       </Select>
     </Flex>
   );

@@ -28,7 +28,7 @@ export default function ProfileInformation() {
         gap={{ base: 4, md: "80px" }}
         rowGap={10}
         px="20px"
-        py="40px"
+        pt="40px"
       >
         <GridItem
           area="image"
@@ -41,7 +41,10 @@ export default function ProfileInformation() {
             overflow="hidden"
             borderRadius={"20px"}
           >
-            <Image alt="image" />
+            <Image
+              src="/julius.jpg"
+              alt="image"
+            />
           </Box>
         </GridItem>
         <GridItem area="info">
@@ -51,20 +54,34 @@ export default function ProfileInformation() {
             w="393px"
             h="192px"
           >
-            <Text
-              fontSize="70px"
-              fontWeight={700}
-              textTransform="uppercase"
-              lineHeight={"70px"}
+            <Flex
+              gap={8}
+              flexDir="column"
+              mt="20px"
             >
-              Julius Legaspi
-            </Text>
+              <Text
+                fontSize="70px"
+                fontWeight={700}
+                textTransform="uppercase"
+                color="#0978DE"
+              >
+                Julius
+              </Text>
+              <Text
+                fontSize="70px"
+                fontWeight={700}
+                textTransform="uppercase"
+              >
+                Legaspi
+              </Text>
+            </Flex>
             <Flex flexDir="column">
               <Text
                 fontSize="40px"
                 lineHeight={"45px"}
+                fontWeight={500}
               >
-                {capitalizeFirstLetter("owner/front-end developer")}
+                {capitalizeFirstLetter("owner/full-stack developer")}
               </Text>
               <Text
                 fontSize="40px"

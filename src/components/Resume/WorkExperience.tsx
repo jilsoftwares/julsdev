@@ -12,18 +12,18 @@ const data = [
       "As a highly confident and skilled software engineer, I took charge of developing exceptional custom solutions, debugging, and enhancing the front-end experience. Additionally, I made an impactful contribution to the implementation of the back-end API to expedite the deployment of the project.",
   },
   {
-    companyName: "Yachtly | WaterSpot LLP",
-    address: "Jalan Kelichap, Singapore",
-    role: "Software Engineer",
-    year: "May 2022 – Nov 2023",
+    companyName: "MrPau Softwares",
+    address: "Matina Crossing, Davao City",
+    role: "Programmer / System Ad",
+    year: "APRIL 2018 - SEPTEMBER 2020",
     description:
       "As a highly confident and skilled software engineer, I took charge of developing exceptional custom solutions, debugging, and enhancing the front-end experience. Additionally, I made an impactful contribution to the implementation of the back-end API to expedite the deployment of the project.",
   },
   {
-    companyName: "Yachtly | WaterSpot LLP",
-    address: "Jalan Kelichap, Singapore",
-    role: "Software Engineer",
-    year: "May 2022 – Nov 2023",
+    companyName: "Notre Dame University | ICT",
+    address: "De Mazenod Avenue, Cotabato City",
+    role: "Junior Programmer",
+    year: "JUNE 2015 - MARCH 2018",
     description:
       "As a highly confident and skilled software engineer, I took charge of developing exceptional custom solutions, debugging, and enhancing the front-end experience. Additionally, I made an impactful contribution to the implementation of the back-end API to expedite the deployment of the project.",
   },

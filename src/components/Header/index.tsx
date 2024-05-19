@@ -1,4 +1,4 @@
-import { HStack, Link, Image } from "@chakra-ui/react";
+import { HStack, Link, Image, Box } from "@chakra-ui/react";
 
 import DevContainer from "../DevContainer";
 import { navLinks } from "./navLinks";
@@ -6,13 +6,14 @@ import { useRouter } from "next/router";
 
 import NextLink from "next/link";
 import AnimatedLink from "../AnimatedLink";
+import PhFlag from "../SVG/philippines";
 
 export default function Header() {
   const router = useRouter();
   return (
     <DevContainer>
       <HStack
-        pb={{ base: "80px", md: "0px" }}
+        pb={{ base: "80px", md: "40px" }}
         justifyContent="space-between"
       >
         <Link href={"/"}>
@@ -42,6 +43,13 @@ export default function Header() {
               </AnimatedLink>
             );
           })}
+          {/* <Box mt="-3px">
+            <PhFlag
+              width={40}
+              height={25}
+              rounded="3px"
+            />
+          </Box> */}
         </HStack>
       </HStack>
     </DevContainer>

@@ -6,8 +6,9 @@ export default function ProfileSummary() {
   return (
     <Flex
       flexDir="column"
-      gap="40px"
-      pl="356px"
+      gap="30px"
+      px="20px"
+      pt="40px"
     >
       <Text
         lineHeight="45px"
@@ -17,16 +18,18 @@ export default function ProfileSummary() {
         Profile
       </Text>
       <DevFadeInUp>
-        <Text
-          lineHeight="23px"
-          fontSize="18px"
-          fontWeight={400}
-          pr="100px"
-        >
-          As a highly confident and skilled software engineer, I took charge of developing
-          exceptional custom solutions, debugging, and enhancing the front-end experience.
-          Additionally, I made an impactful contribution to the implementation of the back-end API
-          to expedite the deployment of the project.
+        <Text>
+          I understand how crucial it is to have engaging technology and seamless applications that
+          capture people's attention. I empathize with the challenges faced by IT professionals as
+          they seek to take risks and explore better solutions. I am skilled at delving into
+          intricate problems and utilizing new technology to achieve the best outcomes.
+        </Text>
+        <br />
+        <Text>
+          I consistently bring a positive and friendly approach to my work, along with a great deal
+          of motivation, loyalty, and humor. My goal is to excel in every project. I am always
+          seeking personal and professional growth and hope to make a meaningful impact on the tech
+          world.
         </Text>
       </DevFadeInUp>
     </Flex>

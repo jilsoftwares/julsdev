@@ -46,8 +46,18 @@ export default function ContactForm() {
             justify="space-between"
             w={{ md: "570px", base: "full" }}
           >
-            <BoxSelect label="What is your plan?" />
-            <BoxSelect label="What is your budget?" />
+            <BoxSelect
+              label="What is your plan?"
+              options={["to hire you", "to build a project"]}
+            />
+            <BoxSelect
+              label="What is your budget?"
+              options={[
+                "25,000 - 50,000 pesos",
+                "50,000 - 100,000 pesos",
+                "100,000 pesos - higher",
+              ]}
+            />
           </Flex>
         </Center>
         <Center>
@@ -87,6 +97,7 @@ export default function ContactForm() {
             transition={"color 0.2s"}
             rounded={3}
             border="2px"
+            color="#0978DE"
           >
             sent
           </Button>

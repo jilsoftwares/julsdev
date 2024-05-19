@@ -13,8 +13,8 @@ export default function InfoSection() {
         >
           Information
         </Text>
-        <Text>juliuslegaspi2014@gmail.com</Text>
-        <Text>Mindanao, Davao City, Philippines</Text>
+        <Text>jilsoftwares@gmail.com</Text>
+        <Text pr="150px">Mindanao, Davao City, Philippines</Text>
       </Flex>
     </Box>
   );
